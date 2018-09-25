@@ -1,0 +1,30 @@
+C:\Users\Thitipong\source\repos\MvcTest\ServicePrs\obj\Debug\ServicePrs.csprojAssemblyReference.cache
+C:\Users\Thitipong\source\repos\MvcTest\ServicePrs\obj\Debug\ServicePrs.csproj.CoreCompileInputs.cache
+C:\Users\Thitipong\source\repos\MvcTest\ServicePrs\bin\Debug\ServicePrs.dll.config
+C:\Users\Thitipong\source\repos\MvcTest\ServicePrs\bin\Debug\ServicePrs.dll
+C:\Users\Thitipong\source\repos\MvcTest\ServicePrs\bin\Debug\ServicePrs.pdb
+C:\Users\Thitipong\source\repos\MvcTest\ServicePrs\bin\Debug\EntityFramework.dll
+C:\Users\Thitipong\source\repos\MvcTest\ServicePrs\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Thitipong\source\repos\MvcTest\ServicePrs\bin\Debug\Model.dll
+C:\Users\Thitipong\source\repos\MvcTest\ServicePrs\bin\Debug\Model.pdb
+C:\Users\Thitipong\source\repos\MvcTest\ServicePrs\bin\Debug\Model.dll.config
+C:\Users\Thitipong\source\repos\MvcTest\ServicePrs\bin\Debug\EntityFramework.xml
+C:\Users\Thitipong\source\repos\MvcTest\ServicePrs\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Thitipong\source\repos\MvcTest\ServicePrs\obj\Debug\ServicePrs.csproj.CopyComplete
+C:\Users\Thitipong\source\repos\MvcTest\ServicePrs\obj\Debug\ServicePrs.dll
+C:\Users\Thitipong\source\repos\MvcTest\ServicePrs\obj\Debug\ServicePrs.pdb
+C:\Users\Thitipong\Dropbox\Job\Code Test\Mvccore\MvcTest\ServicePrs\bin\Debug\ServicePrs.dll.config
+C:\Users\Thitipong\Dropbox\Job\Code Test\Mvccore\MvcTest\ServicePrs\bin\Debug\ServicePrs.dll
+C:\Users\Thitipong\Dropbox\Job\Code Test\Mvccore\MvcTest\ServicePrs\bin\Debug\ServicePrs.pdb
+C:\Users\Thitipong\Dropbox\Job\Code Test\Mvccore\MvcTest\ServicePrs\bin\Debug\EntityFramework.dll
+C:\Users\Thitipong\Dropbox\Job\Code Test\Mvccore\MvcTest\ServicePrs\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Thitipong\Dropbox\Job\Code Test\Mvccore\MvcTest\ServicePrs\bin\Debug\Model.dll
+C:\Users\Thitipong\Dropbox\Job\Code Test\Mvccore\MvcTest\ServicePrs\bin\Debug\Model.pdb
+C:\Users\Thitipong\Dropbox\Job\Code Test\Mvccore\MvcTest\ServicePrs\bin\Debug\Model.dll.config
+C:\Users\Thitipong\Dropbox\Job\Code Test\Mvccore\MvcTest\ServicePrs\bin\Debug\EntityFramework.xml
+C:\Users\Thitipong\Dropbox\Job\Code Test\Mvccore\MvcTest\ServicePrs\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Thitipong\Dropbox\Job\Code Test\Mvccore\MvcTest\ServicePrs\obj\Debug\ServicePrs.csprojAssemblyReference.cache
+C:\Users\Thitipong\Dropbox\Job\Code Test\Mvccore\MvcTest\ServicePrs\obj\Debug\ServicePrs.csproj.CoreCompileInputs.cache
+C:\Users\Thitipong\Dropbox\Job\Code Test\Mvccore\MvcTest\ServicePrs\obj\Debug\ServicePrs.csproj.CopyComplete
+C:\Users\Thitipong\Dropbox\Job\Code Test\Mvccore\MvcTest\ServicePrs\obj\Debug\ServicePrs.dll
+C:\Users\Thitipong\Dropbox\Job\Code Test\Mvccore\MvcTest\ServicePrs\obj\Debug\ServicePrs.pdb

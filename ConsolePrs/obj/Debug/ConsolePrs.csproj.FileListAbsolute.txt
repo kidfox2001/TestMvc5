@@ -1,0 +1,36 @@
+C:\Users\Thitipong\source\repos\MvcTest\ConsolePrs\obj\Debug\ConsolePrs.csproj.CoreCompileInputs.cache
+C:\Users\Thitipong\source\repos\MvcTest\ConsolePrs\bin\Debug\ConsolePrs.exe.config
+C:\Users\Thitipong\source\repos\MvcTest\ConsolePrs\bin\Debug\ConsolePrs.exe
+C:\Users\Thitipong\source\repos\MvcTest\ConsolePrs\bin\Debug\ConsolePrs.pdb
+C:\Users\Thitipong\source\repos\MvcTest\ConsolePrs\bin\Debug\Model.dll
+C:\Users\Thitipong\source\repos\MvcTest\ConsolePrs\bin\Debug\ServicePrs.dll
+C:\Users\Thitipong\source\repos\MvcTest\ConsolePrs\bin\Debug\EntityFramework.dll
+C:\Users\Thitipong\source\repos\MvcTest\ConsolePrs\bin\Debug\Model.pdb
+C:\Users\Thitipong\source\repos\MvcTest\ConsolePrs\bin\Debug\Model.dll.config
+C:\Users\Thitipong\source\repos\MvcTest\ConsolePrs\bin\Debug\ServicePrs.pdb
+C:\Users\Thitipong\source\repos\MvcTest\ConsolePrs\bin\Debug\ServicePrs.dll.config
+C:\Users\Thitipong\source\repos\MvcTest\ConsolePrs\bin\Debug\EntityFramework.xml
+C:\Users\Thitipong\source\repos\MvcTest\ConsolePrs\obj\Debug\ConsolePrs.csprojAssemblyReference.cache
+C:\Users\Thitipong\source\repos\MvcTest\ConsolePrs\obj\Debug\ConsolePrs.csproj.CopyComplete
+C:\Users\Thitipong\source\repos\MvcTest\ConsolePrs\obj\Debug\ConsolePrs.exe
+C:\Users\Thitipong\source\repos\MvcTest\ConsolePrs\obj\Debug\ConsolePrs.pdb
+C:\Users\Thitipong\source\repos\MvcTest\ConsolePrs\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Thitipong\source\repos\MvcTest\ConsolePrs\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Thitipong\Dropbox\Job\Code Test\Mvccore\MvcTest\ConsolePrs\bin\Debug\ConsolePrs.exe.config
+C:\Users\Thitipong\Dropbox\Job\Code Test\Mvccore\MvcTest\ConsolePrs\bin\Debug\ConsolePrs.exe
+C:\Users\Thitipong\Dropbox\Job\Code Test\Mvccore\MvcTest\ConsolePrs\bin\Debug\ConsolePrs.pdb
+C:\Users\Thitipong\Dropbox\Job\Code Test\Mvccore\MvcTest\ConsolePrs\bin\Debug\EntityFramework.dll
+C:\Users\Thitipong\Dropbox\Job\Code Test\Mvccore\MvcTest\ConsolePrs\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Thitipong\Dropbox\Job\Code Test\Mvccore\MvcTest\ConsolePrs\bin\Debug\Model.dll
+C:\Users\Thitipong\Dropbox\Job\Code Test\Mvccore\MvcTest\ConsolePrs\bin\Debug\ServicePrs.dll
+C:\Users\Thitipong\Dropbox\Job\Code Test\Mvccore\MvcTest\ConsolePrs\bin\Debug\Model.pdb
+C:\Users\Thitipong\Dropbox\Job\Code Test\Mvccore\MvcTest\ConsolePrs\bin\Debug\Model.dll.config
+C:\Users\Thitipong\Dropbox\Job\Code Test\Mvccore\MvcTest\ConsolePrs\bin\Debug\ServicePrs.pdb
+C:\Users\Thitipong\Dropbox\Job\Code Test\Mvccore\MvcTest\ConsolePrs\bin\Debug\ServicePrs.dll.config
+C:\Users\Thitipong\Dropbox\Job\Code Test\Mvccore\MvcTest\ConsolePrs\bin\Debug\EntityFramework.xml
+C:\Users\Thitipong\Dropbox\Job\Code Test\Mvccore\MvcTest\ConsolePrs\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Thitipong\Dropbox\Job\Code Test\Mvccore\MvcTest\ConsolePrs\obj\Debug\ConsolePrs.csprojAssemblyReference.cache
+C:\Users\Thitipong\Dropbox\Job\Code Test\Mvccore\MvcTest\ConsolePrs\obj\Debug\ConsolePrs.csproj.CoreCompileInputs.cache
+C:\Users\Thitipong\Dropbox\Job\Code Test\Mvccore\MvcTest\ConsolePrs\obj\Debug\ConsolePrs.csproj.CopyComplete
+C:\Users\Thitipong\Dropbox\Job\Code Test\Mvccore\MvcTest\ConsolePrs\obj\Debug\ConsolePrs.exe
+C:\Users\Thitipong\Dropbox\Job\Code Test\Mvccore\MvcTest\ConsolePrs\obj\Debug\ConsolePrs.pdb

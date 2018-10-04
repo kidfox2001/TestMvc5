@@ -11,14 +11,31 @@ namespace ServicePrs
     public class UnitOfWorkPrs : IDisposable
     {
         private ModelPrs context = new ModelPrs();
+
+
         private GenericRepository<tblItem> _tblItem;
-
-
         public GenericRepository<tblItem> tblItemRepository
         {
             get
             {
-                return this._tblItem ?? new GenericRepository<tblItem>(context);
+                if (this._tblItem == null)
+                {
+                    this._tblItem = new GenericRepository<tblItem>(context);
+                }
+                return this._tblItem;
+            }
+        }
+
+        private GenericRepository<tblItemUnit> _tblItemUnit;
+        public GenericRepository<tblItemUnit> tblItemUnitRepository
+        {
+            get
+            {
+                if (this._tblItemUnit == null)
+                {
+                    this._tblItemUnit = new GenericRepository<tblItemUnit>(context);
+                }
+                return this._tblItemUnit;
             }
         }
 

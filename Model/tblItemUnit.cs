@@ -28,5 +28,6 @@ namespace Model
         public bool? itemunit_default { get; set; }
 
         public bool? is_active { get; set; }
+
     }
 }

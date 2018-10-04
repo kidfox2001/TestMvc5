@@ -13,12 +13,11 @@ namespace Model
         [Column(Order = 0)]
         public Guid item_id { get; set; }
 
-        [Key]
+      
         [Column(Order = 1)]
         [StringLength(50)]
         public string item_code { get; set; }
 
-        [Key]
         [Column(Order = 2)]
         [StringLength(255)]
         public string item_name { get; set; }
@@ -27,6 +26,7 @@ namespace Model
         public string barcode { get; set; }
 
         public Guid? location_id { get; set; }
+        public  tblLocation tblLocation { get; set; }
 
         [Column(TypeName = "smalldatetime")]
         public DateTime? update_date { get; set; }

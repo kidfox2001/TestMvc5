@@ -21,3 +21,15 @@ C:\Users\Thitipong\Dropbox\Job\Code Test\Mvccore\MvcTest\Model\obj\Debug\Model.c
 C:\Users\Thitipong\Dropbox\Job\Code Test\Mvccore\MvcTest\Model\obj\Debug\Model.csproj.CopyComplete
 C:\Users\Thitipong\Dropbox\Job\Code Test\Mvccore\MvcTest\Model\obj\Debug\Model.dll
 C:\Users\Thitipong\Dropbox\Job\Code Test\Mvccore\MvcTest\Model\obj\Debug\Model.pdb
+D:\Code Git\TestMvc5\Model\bin\Debug\Model.dll.config
+D:\Code Git\TestMvc5\Model\bin\Debug\Model.dll
+D:\Code Git\TestMvc5\Model\bin\Debug\Model.pdb
+D:\Code Git\TestMvc5\Model\bin\Debug\EntityFramework.dll
+D:\Code Git\TestMvc5\Model\bin\Debug\EntityFramework.SqlServer.dll
+D:\Code Git\TestMvc5\Model\bin\Debug\EntityFramework.xml
+D:\Code Git\TestMvc5\Model\bin\Debug\EntityFramework.SqlServer.xml
+D:\Code Git\TestMvc5\Model\obj\Debug\Model.csprojAssemblyReference.cache
+D:\Code Git\TestMvc5\Model\obj\Debug\Model.csproj.CoreCompileInputs.cache
+D:\Code Git\TestMvc5\Model\obj\Debug\Model.csproj.CopyComplete
+D:\Code Git\TestMvc5\Model\obj\Debug\Model.dll
+D:\Code Git\TestMvc5\Model\obj\Debug\Model.pdb

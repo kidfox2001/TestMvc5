@@ -15,9 +15,15 @@ namespace MvcTest.Controllers
         // GET: ItemProducts
         public ActionResult Index()
         {
-            var items = unit.tblItemRepository.GetAll();
+            tblItem i1 = unit.tblItemRepository.Get(m => m.item_name== "longdoo1", null, "").SingleOrDefault();
 
-            return View(items);
+            var l1 = i1 .tblLocation;
+
+            //var items = unit.tblItemRepository.GetAll();
+
+            //var l = items.Last().tblLocation;
+
+            return View(i1);
         }
 
         // GET: ItemProducts/Details/5

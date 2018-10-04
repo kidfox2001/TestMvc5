@@ -13,12 +13,12 @@ namespace Model
         [Column(Order = 0)]
         public Guid location_id { get; set; }
 
-        [Key]
+  
         [Column(Order = 1)]
         [StringLength(50)]
         public string location_code { get; set; }
 
-        [Key]
+   
         [Column(Order = 2)]
         [StringLength(255)]
         public string location_name { get; set; }
@@ -31,8 +31,10 @@ namespace Model
         [Column(TypeName = "smalldatetime")]
         public DateTime? update_date { get; set; }
 
-        [Key]
+  
         [Column(Order = 3)]
         public bool is_active { get; set; }
+
+        public  ICollection<tblItem> tblItems { get; set; } = new HashSet<tblItem>();
     }
 }

@@ -8,13 +8,24 @@ using System.Threading.Tasks;
 
 namespace ServicePrs
 {
-    public class UnitOfWorkPrs : IDisposable
+    public interface IUnitOfWork : IDisposable
+    {
+
+        IGenericRepository<tblItem> tblItemRepository { get; }
+        IGenericRepository<tblItemUnit> tblItemUnitRepository { get; }
+
+        void Save();
+        void SaveWithLog();
+
+    }
+
+    public class UnitOfWorkPrs : IUnitOfWork
     {
         private ModelPrs context = new ModelPrs();
 
 
-        private GenericRepository<tblItem> _tblItem;
-        public GenericRepository<tblItem> tblItemRepository
+        private IGenericRepository<tblItem> _tblItem;
+        public IGenericRepository<tblItem> tblItemRepository
         {
             get
             {
@@ -26,8 +37,8 @@ namespace ServicePrs
             }
         }
 
-        private GenericRepository<tblItemUnit> _tblItemUnit;
-        public GenericRepository<tblItemUnit> tblItemUnitRepository
+        private IGenericRepository<tblItemUnit> _tblItemUnit;
+        public IGenericRepository<tblItemUnit> tblItemUnitRepository
         {
             get
             {
@@ -39,12 +50,11 @@ namespace ServicePrs
             }
         }
 
-
-        public GenericRepository<T> getGeneric<T>() where T : class
-        {
-            var repo = new GenericRepository<T>(context);
-            return repo;
-        }
+        //public GenericRepository<T> getGeneric<T>() where T : class
+        //{
+        //    var repo = new GenericRepository<T>(context);
+        //    return repo;
+        //}
 
 
         public void Save()
@@ -93,6 +103,9 @@ namespace ServicePrs
             GC.SuppressFinalize(this);
         }
 
-
+        public void SaveWithLog()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

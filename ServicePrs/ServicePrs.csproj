@@ -62,6 +62,10 @@
       <Project>{62d73ede-3a6a-44e0-bc28-a68becfcbe3a}</Project>
       <Name>Model</Name>
     </ProjectReference>
+    <ProjectReference Include="..\TestMvcUtils\TestMvcUtils.csproj">
+      <Project>{df4adeee-5834-49f5-9f69-c0f395fe347a}</Project>
+      <Name>TestMvcUtils</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

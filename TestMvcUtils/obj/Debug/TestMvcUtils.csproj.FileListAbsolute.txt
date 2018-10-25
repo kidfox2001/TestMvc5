@@ -1,0 +1,12 @@
+D:\Code Git\TestMvc5\TestMvcUtils\bin\Debug\TestMvcUtils.dll.config
+D:\Code Git\TestMvc5\TestMvcUtils\bin\Debug\TestMvcUtils.dll
+D:\Code Git\TestMvc5\TestMvcUtils\bin\Debug\TestMvcUtils.pdb
+D:\Code Git\TestMvc5\TestMvcUtils\bin\Debug\EntityFramework.dll
+D:\Code Git\TestMvc5\TestMvcUtils\bin\Debug\EntityFramework.SqlServer.dll
+D:\Code Git\TestMvc5\TestMvcUtils\bin\Debug\EntityFramework.xml
+D:\Code Git\TestMvc5\TestMvcUtils\bin\Debug\EntityFramework.SqlServer.xml
+D:\Code Git\TestMvc5\TestMvcUtils\obj\Debug\TestMvcUtils.csprojAssemblyReference.cache
+D:\Code Git\TestMvc5\TestMvcUtils\obj\Debug\TestMvcUtils.csproj.CoreCompileInputs.cache
+D:\Code Git\TestMvc5\TestMvcUtils\obj\Debug\TestMvcUtils.csproj.CopyComplete
+D:\Code Git\TestMvc5\TestMvcUtils\obj\Debug\TestMvcUtils.dll
+D:\Code Git\TestMvc5\TestMvcUtils\obj\Debug\TestMvcUtils.pdb

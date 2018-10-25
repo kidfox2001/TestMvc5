@@ -43,3 +43,6 @@ D:\Code Git\TestMvc5\ServicePrs\obj\Debug\ServicePrs.csproj.CoreCompileInputs.ca
 D:\Code Git\TestMvc5\ServicePrs\obj\Debug\ServicePrs.csproj.CopyComplete
 D:\Code Git\TestMvc5\ServicePrs\obj\Debug\ServicePrs.dll
 D:\Code Git\TestMvc5\ServicePrs\obj\Debug\ServicePrs.pdb
+D:\Code Git\TestMvc5\ServicePrs\bin\Debug\TestMvcUtils.dll
+D:\Code Git\TestMvc5\ServicePrs\bin\Debug\TestMvcUtils.pdb
+D:\Code Git\TestMvc5\ServicePrs\bin\Debug\TestMvcUtils.dll.config

@@ -32,3 +32,7 @@ D:\Code Git\TestMvc5\Model\obj\Debug\Model.csproj.CoreCompileInputs.cache
 D:\Code Git\TestMvc5\Model\obj\Debug\Model.csproj.CopyComplete
 D:\Code Git\TestMvc5\Model\obj\Debug\Model.dll
 D:\Code Git\TestMvc5\Model\obj\Debug\Model.pdb
+D:\Code Git\TestMvc5\Model\obj\Debug\Model.csprojAssemblyReference.cache
+D:\Code Git\TestMvc5\Model\bin\Debug\TestMvcUtils.dll
+D:\Code Git\TestMvc5\Model\bin\Debug\TestMvcUtils.pdb
+D:\Code Git\TestMvc5\Model\bin\Debug\TestMvcUtils.dll.config

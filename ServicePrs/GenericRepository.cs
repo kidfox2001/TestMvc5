@@ -4,8 +4,6 @@ using System.Data.Entity;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Linq.Expressions;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ServicePrs
 {
@@ -55,6 +53,8 @@ namespace ServicePrs
             //context.Database.Log = s => (new LogFile()).writeLog(s);
 
         }
+
+       
 
         public virtual IEnumerable<TEntity> Get(
             Expression<Func<TEntity, bool>> filter = null,
@@ -154,7 +154,6 @@ namespace ServicePrs
         }
 
     }
-
 
     public class DummyGenericRepository<TEntity> : IGenericRepository<TEntity> where TEntity : class
     {

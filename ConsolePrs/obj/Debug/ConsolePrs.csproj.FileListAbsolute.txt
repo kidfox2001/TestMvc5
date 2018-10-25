@@ -52,3 +52,6 @@ D:\Code Git\TestMvc5\ConsolePrs\obj\Debug\ConsolePrs.csproj.CoreCompileInputs.ca
 D:\Code Git\TestMvc5\ConsolePrs\obj\Debug\ConsolePrs.csproj.CopyComplete
 D:\Code Git\TestMvc5\ConsolePrs\obj\Debug\ConsolePrs.exe
 D:\Code Git\TestMvc5\ConsolePrs\obj\Debug\ConsolePrs.pdb
+D:\Code Git\TestMvc5\ConsolePrs\bin\Debug\TestMvcUtils.dll
+D:\Code Git\TestMvc5\ConsolePrs\bin\Debug\TestMvcUtils.pdb
+D:\Code Git\TestMvc5\ConsolePrs\bin\Debug\TestMvcUtils.dll.config

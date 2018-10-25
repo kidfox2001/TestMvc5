@@ -12,18 +12,19 @@ namespace MvcTest.Controllers
     {
         UnitOfWorkPrs unit = new UnitOfWorkPrs();
 
-        // GET: ItemProducts
-        public ActionResult Index()
+        [HttpGet]
+        public ActionResult Index(String ttt)
         {
-            tblItem i1 = unit.tblItemRepository.Get(m => m.item_name== "longdoo1", null, "").SingleOrDefault();
+            //tblItem i1 = unit.tblItemRepository.Get(m => m.item_name== "longdoo1", null, "").SingleOrDefault();
 
-            var l1 = i1 .tblLocation;
+            //var l1 = i1 .tblLocation;
 
-            //var items = unit.tblItemRepository.GetAll();
+            var items = unit.tblItemRepository.GetAll();
 
             //var l = items.Last().tblLocation;
 
-            return View(i1);
+
+            return View(items);
         }
 
         // GET: ItemProducts/Details/5
@@ -35,6 +36,7 @@ namespace MvcTest.Controllers
         // GET: ItemProducts/Create
         public ActionResult Create()
         {
+            var b = ViewBag.BagItems;
             return View();
         }
 

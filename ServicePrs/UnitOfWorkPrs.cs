@@ -1,6 +1,7 @@
 ﻿using Model;
 using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Data.Entity.Validation;
 using System.Linq;
 using System.Text;
@@ -11,8 +12,8 @@ namespace ServicePrs
     public interface IUnitOfWork : IDisposable
     {
 
-        IGenericRepository<tblItem> tblItemRepository { get; }
-        IGenericRepository<tblItemUnit> tblItemUnitRepository { get; }
+        //IGenericRepository<tblItem> tblItemRepository { get; }
+        //IGenericRepository<tblItemUnit> tblItemUnitRepository { get; }
 
         void Save();
         void SaveWithLog();
@@ -22,7 +23,6 @@ namespace ServicePrs
     public class UnitOfWorkPrs : IUnitOfWork
     {
         private ModelPrs context = new ModelPrs();
-
 
         private IGenericRepository<tblItem> _tblItem;
         public IGenericRepository<tblItem> tblItemRepository
@@ -47,6 +47,19 @@ namespace ServicePrs
                     this._tblItemUnit = new GenericRepository<tblItemUnit>(context);
                 }
                 return this._tblItemUnit;
+            }
+        }
+
+        private IGenericRepository<tblShip> _tblShip;
+        public IGenericRepository<tblShip> tblShipRepository
+        {
+            get
+            {
+                if (this._tblShip == null)
+                {
+                    this._tblShip = new GenericRepository<tblShip>(context);
+                }
+                return this._tblShip;
             }
         }
 
@@ -107,5 +120,81 @@ namespace ServicePrs
         {
             throw new NotImplementedException();
         }
+    }
+
+    public class GenericUnitOfWork : IUnitOfWork
+    {
+        private DbContext _context;
+
+        public GenericUnitOfWork(ModelPrs context)
+        {
+            _context = context;
+        }
+
+        private Dictionary<Type, Object> repositories = new Dictionary<Type, object>();
+        public IGenericRepository<TEntity> Resipotory<TEntity>() where TEntity : class
+        {
+            if (repositories.Keys.Contains(typeof(TEntity)) == true)
+            {
+                return repositories[typeof(TEntity)] as IGenericRepository<TEntity>;
+            }
+
+            IGenericRepository<TEntity> resipotory = new GenericRepository<TEntity>(_context);
+            repositories.Add(typeof(TEntity), resipotory);
+            return resipotory;
+        }
+
+        public void Save()
+        {
+            try
+            {
+                _context.SaveChanges();
+            }
+            catch (DbEntityValidationException e)
+            {
+                foreach (var eve in e.EntityValidationErrors)
+                {
+                    System.Diagnostics.Debug.WriteLine("Entity of type \"{0}\" in state \"{1}\" has the following validation errors:",
+                        eve.Entry.Entity.GetType().Name, eve.Entry.State);
+                    foreach (var ve in eve.ValidationErrors)
+                    {
+                        System.Diagnostics.Debug.WriteLine("- Property: \"{0}\", Value: \"{1}\", Error: \"{2}\"",
+                                            ve.PropertyName,
+                                            eve.Entry.CurrentValues.GetValue<object>(ve.PropertyName),
+                                            ve.ErrorMessage);
+                    }
+                }
+                throw;
+            }
+
+            //   context.SaveChanges();
+        }
+
+        public void SaveWithLog()
+        {
+            throw new NotImplementedException();
+        }
+
+
+        private bool disposed = false;
+
+        protected virtual void Dispose(bool disposing)
+        {
+            if (!this.disposed)
+            {
+                if (disposing)
+                {
+                    _context.Dispose();
+                }
+            }
+            this.disposed = true;
+        }
+
+        public void Dispose()
+        {
+            Dispose(true);
+            GC.SuppressFinalize(this);
+        }
+
     }
 }

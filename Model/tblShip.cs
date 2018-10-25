@@ -1,3 +1,5 @@
+using TFundSolution.Utils.EntityFramworks;
+
 namespace Model
 {
     using System;
@@ -10,50 +12,34 @@ namespace Model
     public partial class tblShip
     {
         [Key]
-        [Column(Order = 0)]
         public Guid ship_id { get; set; }
 
-        [Key]
-        [Column(Order = 1)]
-        public byte ship_status { get; set; }
+        public byte? ship_status { get; set; }
 
-        [Key]
-        [Column(Order = 2)]
-        public byte ship_receive_status { get; set; }
+        public byte? ship_receive_status { get; set; }
 
-        [Key]
-        [Column(Order = 3)]
         [StringLength(50)]
         public string ship_doc { get; set; }
 
-        [Key]
-        [Column(Order = 4, TypeName = "smalldatetime")]
+        [xxx]
+        [Required(ErrorMessage = "ต้องระบุ")]
+        [DataType(DataType.DateTime, ErrorMessage = "nnn")]
+        // [Column(TypeName = "smalldatetime")]
         public DateTime ship_date { get; set; }
 
-        [Key]
-        [Column(Order = 5)]
-        public Guid request_location { get; set; }
+        public Guid? request_location { get; set; }
 
-        [Key]
-        [Column(Order = 6)]
-        public Guid location_id { get; set; }
+        public Guid? location_id { get; set; }
 
-        [Key]
-        [Column(Order = 7)]
-        public decimal ship_sum_item { get; set; }
+        public decimal? ship_sum_item { get; set; }
 
-        [Key]
-        [Column(Order = 8)]
-        public decimal ship_sum_cost { get; set; }
+        public decimal? ship_sum_cost { get; set; }
 
         public string note { get; set; }
 
-        [Key]
-        [Column(Order = 9, TypeName = "smalldatetime")]
-        public DateTime update_date { get; set; }
+        [Column( TypeName = "smalldatetime")]
+        public DateTime? update_date { get; set; }
 
-        [Key]
-        [Column(Order = 10)]
-        public Guid update_by { get; set; }
+        public Guid? update_by { get; set; }
     }
 }

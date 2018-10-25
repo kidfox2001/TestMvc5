@@ -307,3 +307,6 @@ D:\Code Git\TestMvc5\MvcTest\bin\Unity.Interception.pdb
 D:\Code Git\TestMvc5\MvcTest\bin\Unity.Interception.Configuration.pdb
 D:\Code Git\TestMvc5\MvcTest\bin\Unity.RegistrationByConvention.pdb
 D:\Code Git\TestMvc5\MvcTest\bin\Unity.ServiceLocation.pdb
+D:\Code Git\TestMvc5\MvcTest\bin\TestMvcUtils.dll
+D:\Code Git\TestMvc5\MvcTest\bin\TestMvcUtils.pdb
+D:\Code Git\TestMvc5\MvcTest\bin\TestMvcUtils.dll.config

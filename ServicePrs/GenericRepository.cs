@@ -26,6 +26,8 @@ namespace ServicePrs
 
         void Insert(TEntity entity);
 
+        void InsertBulkManual(IEnumerable<TEntity> entities);
+
         void Update(TEntity entityToUpdate);
 
         void Delete(object id);
@@ -153,6 +155,12 @@ namespace ServicePrs
             return context.Database.SqlQuery<TEntity>(command, parameters).ToList();
         }
 
+        public void InsertBulkManual(IEnumerable<TEntity> entities)
+        {
+            context.Configuration.AutoDetectChangesEnabled = false;
+
+            dbSet.AddRange(entities);
+        }
     }
 
     public class DummyGenericRepository<TEntity> : IGenericRepository<TEntity> where TEntity : class
@@ -251,6 +259,11 @@ namespace ServicePrs
         }
 
         public IEnumerable<TEntity> GetByStoredProcedure(string spName, params SqlParameter[] parameters)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void InsertBulkManual(IEnumerable<TEntity> entities)
         {
             throw new NotImplementedException();
         }

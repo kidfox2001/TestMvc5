@@ -1,4 +1,5 @@
 using Model;
+using Supermarket.Models;
 
 namespace ServicePrs
 {
@@ -6,6 +7,7 @@ namespace ServicePrs
     using System.Data.Entity;
     using System.ComponentModel.DataAnnotations.Schema;
     using System.Linq;
+    using System.Data.Entity.Infrastructure;
 
     public partial class ModelPrs : DbContext
     {
@@ -13,6 +15,8 @@ namespace ServicePrs
             : base("name=ModelPrs")
         {
             Database.SetInitializer<ModelPrs>(null);
+            this.Configuration.LazyLoadingEnabled = false;
+          //var xx=  ((IObjectContextAdapter)this).ObjectContext.CreateDatabaseScript();
         }
 
         public virtual DbSet<APRTA> APRTAs { get; set; }
@@ -55,6 +59,12 @@ namespace ServicePrs
         public virtual DbSet<tblTranferMap> tblTranferMaps { get; set; }
         public virtual DbSet<tblUnit> tblUnits { get; set; }
         public virtual DbSet<TXRATE> TXRATEs { get; set; }
+
+        public DbSet<Product> Products { get; set; }
+        public DbSet<Order> Orders { get; set; }
+
+        public DbSet<Promotion> Promotions { get; set; }
+        public DbSet<BuyMoreForLessPromotion> BuyMoreForLessPromotions { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {

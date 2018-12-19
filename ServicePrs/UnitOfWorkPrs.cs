@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Data.Entity.Validation;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -14,6 +15,7 @@ namespace ServicePrs
 
         //IGenericRepository<tblItem> tblItemRepository { get; }
         //IGenericRepository<tblItemUnit> tblItemUnitRepository { get; }
+        void BulkCopy<T>(IEnumerable<T> source);
 
         void Save();
         void SaveWithLog();
@@ -69,7 +71,6 @@ namespace ServicePrs
         //    return repo;
         //}
 
-
         public void Save()
         {
             try
@@ -117,6 +118,11 @@ namespace ServicePrs
         }
 
         public void SaveWithLog()
+        {
+            throw new NotImplementedException();
+        }
+
+        public void BulkCopy<T>(IEnumerable<T> source)
         {
             throw new NotImplementedException();
         }
@@ -196,5 +202,33 @@ namespace ServicePrs
             GC.SuppressFinalize(this);
         }
 
+        public void BulkCopy<T>(IEnumerable<T> source)
+        {
+            using (var connection = new SqlConnection("data source=27.254.81.243;initial catalog=PRS;persist security info=True;user id=ter;password=We187;MultipleActiveResultSets=True"))
+            {
+                connection.Open();
+                SqlTransaction transaction = connection.BeginTransaction();
+
+                using (var bulkCopy = new SqlBulkCopy(connection, SqlBulkCopyOptions.Default, transaction))
+                {
+                    bulkCopy.BatchSize = 100;
+                    bulkCopy.DestinationTableName = typeof(T).Name;
+                    try
+                    {
+                        bulkCopy.WriteToServer(source.AsDataTable());
+                        transaction.Commit();
+                    }
+                    catch (Exception ex)
+                    {
+                        transaction.Rollback();
+                        
+                    }
+                }
+
+                connection.Close();
+            }
+
+           
+        }
     }
 }

@@ -47,5 +47,8 @@ namespace Model
         [Key]
         [Column(Order = 7)]
         public Guid update_by { get; set; }
+
+
+        public virtual ICollection<tblPreshipDetail> PreshipDetails { get; set; }
     }
 }

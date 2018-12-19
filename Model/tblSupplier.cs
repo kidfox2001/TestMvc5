@@ -49,7 +49,7 @@ namespace Model
         [Column(TypeName = "smalldatetime")]
         public DateTime? update_date { get; set; }
 
-        [Key]
+       // [Key]
         [Column(Order = 3)]
         public bool is_active { get; set; }
     }

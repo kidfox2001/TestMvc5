@@ -52,10 +52,16 @@
   <ItemGroup>
     <Compile Include="APRTA.cs" />
     <Compile Include="APRTB.cs" />
+    <Compile Include="BuyMoreForLessPromotion.cs" />
     <Compile Include="Class1.cs" />
     <Compile Include="log_ip.cs" />
     <Compile Include="mg_item_map.cs" />
     <Compile Include="ms_sup_cr.cs" />
+    <Compile Include="Order.cs" />
+    <Compile Include="OrderDetail.cs" />
+    <Compile Include="OrderStatus.cs" />
+    <Compile Include="Product.cs" />
+    <Compile Include="Promotion.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="sysdiagram.cs" />
     <Compile Include="tblBuyer.cs" />
